@@ -205,12 +205,14 @@ TARGET_INIT_VENDOR_LIB := libinit_kinzie
 TARGET_LIBINIT_DEFINES_FILE := $(DEVICE_PATH)/init/init_kinzie.c
 
 # TWRP definitions
+BOARD_HAS_FLIPPED_SCREEN:=true 
 TW_THEME := portrait_hdpi
 TW_INCLUDE_L_CRYPTO := true
 TW_TARGET_USES_QCOM_BSP := true
 TW_NEW_ION_HEAP := true
 TW_INCLUDE_CRYPTO := true
 TW_NO_SCREEN_BLANK := true
+TW_EXTRA_LANGUAGES := true
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TARGET_RECOVERY_PIXEL_FORMAT := RGBA_8888
 BOARD_SUPPRESS_SECURE_ERASE := true
